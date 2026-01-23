@@ -1,0 +1,249 @@
+@font-face {
+    font-family: "KittenFace";
+    src: url("../fonts/Belligan.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "KittenFace2";
+    src: url("../fonts/kefir-bold.otf") format("opentype");
+}
+
+:root {
+    --color-primary: rgb(255 128 78);
+    --color-white: rgb(255 248 236);
+    --color-black: rgb(88 85 75);
+    --color-link: rgb(141 134 122);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: 0.3s all;
+}
+
+body {
+    background-color: var(--color-white);
+    font-family: "KittenFace", sans-serif;
+    color: var(--color-black);
+}
+
+a {
+    color: var(--color-link);
+    text-decoration: none;
+}
+
+.navigation {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 18px;
+}
+
+.navigation .wrapper {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navigation .wrapper ul {
+    display: flex;
+    list-style: none;
+}
+
+.navigation .wrapper ul li {
+    margin-right: 20px;
+    line-height: 80px;
+    font-size: 18px;
+}
+
+.logo img {
+    width: 80px;
+}
+
+.center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.mobile-logo img {
+    width: 54px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 600;
+    font-family: "KittenFace2", sans-serif;
+}
+
+p {
+    font-weight: 200;
+}
+
+.btn {
+    border: none;
+    padding: 10px 20px;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 600;
+    width: 160px;
+    height: 55px;
+    margin: 0px 4px;
+    font-family: "KittenFace", sans-serif;
+}
+
+.btn.btn-primary:hover {
+    opacity: 0.8;
+}
+
+.btn.btn-secondary:hover {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+}
+
+.btn.btn-primary {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+}
+
+.btn.btn-secondary {
+    background-color: transparent;
+    border: 3px solid var(--color-primary);
+    color: var(--color-primary);
+}
+
+.welcome {
+    text-align: center;
+    margin: 0px auto;
+    max-width: 600px;
+    width: calc(100% - 20px);
+}
+
+.welcome h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.welcome p {
+    font-size: 26px;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+    color: hsl(37.89deg 8.3% 44.9%);
+}
+
+.welcome .buttons {
+    margin-top: 28px;
+}
+
+.kitties {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.kitties img {
+    object-fit: cover;
+    max-width: 100%;
+}
+
+.mobile-menu {
+    font-size: 21px;
+    line-height: 60px;
+    user-select: none;
+    cursor: pointer;
+}
+
+.mobile-menu,
+.mobile-logo {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .mobile-menu,
+    .mobile-logo {
+        display: block;
+    }
+
+    .navigation {
+        justify-content: space-between;
+        padding: 10px 28px;
+    }
+
+    .navigation .wrapper {
+        flex-direction: column;
+        align-items: center;
+        border-bottom: 5px solid var(--color-primary);
+        position: absolute;
+        background: var(--color-white);
+        left: 0px;
+        width: 100%;
+        height: calc(100% - 100px);
+        margin-top: 68px;
+        padding: 20px 10px;
+        display: none;
+        z-index: 99999999;
+        justify-content: flex-start;
+        padding: 40px 25px;
+    }
+
+    .navigation .wrapper .logo {
+        display: none;
+    }
+
+    .navigation .wrapper ul {
+        flex-direction: column;
+        margin-bottom: 10px;
+        width: 95%;
+    }
+
+    .navigation .wrapper ul li {
+        margin-right: 0;
+        line-height: 50px;
+    }
+
+    .welcome {
+        margin: 0px auto;
+    }
+
+    .welcome h1 {
+        font-size: 28px;
+    }
+
+    .welcome p {
+        font-size: 20px;
+    }
+
+    .btn {
+        width: 140px;
+        height: 45px;
+        font-size: 16px;
+    }
+
+    .logo img {
+        width: 60px;
+    }
+
+    .kitties {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .welcome h1 {
+        font-size: 24px;
+    }
+
+    .welcome p {
+        font-size: 18px;
+    }
+}

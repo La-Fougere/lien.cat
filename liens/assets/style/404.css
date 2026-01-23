@@ -1,0 +1,10 @@
+.container {
+    visibility:hidden;
+}
+.visible {
+    visibility:visible;
+}
+.subtitle {
+    float: left;
+    margin: 0;
+}
