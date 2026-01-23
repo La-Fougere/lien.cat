@@ -8,6 +8,9 @@
 
 Le raccourcisseur de liens le plus mignon du monde.
 
+## Demo
+https://lien.cat
+
 ## Apercu
 LIEN.CAT est un mini service de raccourcissement d'URL avec statistiques de visites et suppression par cle.
 Le coeur est un front PHP qui cree un dossier par lien et y depose un `index.php` de redirection.
