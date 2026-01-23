@@ -25,24 +25,24 @@ Le coeur est un front PHP qui cree un dossier par lien et y depose un `index.php
 - HTML / CSS / JS
 
 ## Arborescence utile
-- `lien/liens/index.php` : page principale (creation + suppression)
-- `lien/liens/<slug>/index.php` : redirection + compteur
-- `lien/liens/show/<slug>/index.php` : page stats protegee
-- `lien/liens/show/test/index.php` : template copie lors de la creation
-- `lien/liens/admin/index.php` : admin panel
-- `lien/assets/` et `lien/liens/assets/` : styles et images
+- `liens/index.php` : page principale (creation + suppression)
+- `liens/<slug>/index.php` : redirection + compteur
+- `liens/show/<slug>/index.php` : page stats protegee
+- `liens/show/test/index.php` : template copie lors de la creation
+- `liens/admin/index.php` : admin panel
+- `assets/` et `liens/assets/` : styles et images
 
 ## Installation rapide
 1. Creer une base `liens` et un utilisateur avec droits en lecture/ecriture.
 2. Creer la table `liens` (schema minimal ci-dessous).
 3. Mettre a jour les identifiants BDD dans:
-   - `lien/liens/index.php`
-   - `lien/liens/show/test/index.php` (template)
-   - `lien/liens/admin/index.php`
+   - `liens/index.php`
+   - `liens/show/test/index.php` (template)
+   - `liens/admin/index.php`
 4. Donner les droits d'ecriture au serveur web sur:
-   - `lien/liens/`
-   - `lien/liens/show/`
-5. Pointer le DocumentRoot du vhost sur `lien/liens/` pour que `/<slug>` fonctionne.
+   - `liens/`
+   - `liens/show/`
+5. Pointer le DocumentRoot du vhost sur `liens/` pour que `/<slug>` fonctionne.
 
 Schema minimal (exemple):
 ```
