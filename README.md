@@ -8,7 +8,7 @@
 
 Le raccourcisseur de liens le plus mignon du monde.
 
-## Demo
+## Le site
 https://lien.cat
 
 ## Apercu
