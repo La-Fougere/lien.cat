@@ -17,7 +17,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 			$pdo = new PDO(
 				'mysql:host=127.0.0.1;dbname=liens;charset=utf8',
 				'admin',
-				'qMH9ymK@zY51Fj',
+				'supersecretpassword',
 				[PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION]
 			);
 
@@ -59,7 +59,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 			$pdo = new PDO(
 				'mysql:host=127.0.0.1;dbname=liens;charset=utf8',
 				'admin',
-				'qMH9ymK@zY51Fj',
+				'supersecretpassword',
 				[PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION]
 			);
 
@@ -112,7 +112,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 				\$pdo = new PDO(
 					'mysql:host=127.0.0.1;dbname=liens;charset=utf8',
 					'admin',
-					'qMH9ymK@zY51Fj',
+					'supersecretpassword',
 					[PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION]
 				);
 
