@@ -16,7 +16,7 @@ try {
     $pdo = new PDO(
         'mysql:host=127.0.0.1;dbname=liens;charset=utf8',
         'admin',
-        'qMH9ymK@zY51Fj',
+        'supersecretpassword',
         [PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION]
     );
 } catch (Exception $e) {
@@ -26,7 +26,7 @@ try {
 // Vérifier si l'utilisateur est déjà authentifié
 if (!isset($_SESSION['admin_authenticated'])) {
     if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['password'])) {
-        if ($_POST['password'] === 'y0JlCHH2&*jV&ynoh1xUYTk##Rj@LKumhJ!WdmtbXBuwO^gEdu$4mBf7RfhHIU^&e2OdMQ6Hq$X$d$Uep7xODZrHCdk%qsLBA5@h') {
+        if ($_POST['password'] === 'supersecretpassword2') {
             $_SESSION['admin_authenticated'] = true;
             header('Location: index.php');
             exit;
